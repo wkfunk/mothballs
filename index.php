@@ -10,7 +10,7 @@
   <meta name="description" content="movie collection">
   <meta name="author" content="bb">
 
-  <title>movie collection</title>
+  <title>mothballs</title>
 
   <link rel="stylesheet" href="style.css">
   <!--<link rel="stylesheet" href="lightboxstyle.css">-->
