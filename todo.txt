@@ -1,0 +1,25 @@
+login page
+
+
+
+rating page
+	center selection scrolls with page
+		redesign css for absolute 3-way
+		alt., relative 33% each?
+	"done!" button in separate div, centered and on own line?
+	selection of up/down/havent changes css outline
+		green thumbs up/red thumbs down as svg overlays, linked to changing css
+		radio/button below for haven't seen
+
+
+
+
+results page
+	megavideo/alt website embed?
+	upload our own videos/get paid from sites?
+
+
+
+
+
+rt integration

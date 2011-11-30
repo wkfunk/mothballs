@@ -1,83 +1,135 @@
-body {
-  width: 960px;
-  background: #333;
-  margin: 0 auto;
-  font-size: small;
-  font-family: verdana, sans-serif;
-}
-ul {
-  background-color: #666;
-  padding: 9px;
-  overflow: hidden;
-  border-right: 1px solid #fff;
-  border-bottom: 2px solid #fff;
-}
-li {
-  float: left;
-  width: 280px;
-  list-style: none;
-  background-color: #fff;
-  margin: 5px;
-  padding: 9px;
-  border-right: 1px solid #000;
-  border-bottom: 2px solid #333;
-}
-li.clear {
-  clear: both;
-}
-img {
-  width: 100px;
-  padding-top: 5px;
-  margin-top: 10px;
-}
-a {
-  color: #900;
-  text-decoration: none;
-}
-h1 {
-  font-size: 1.5em;
-  margin-left: 20px;
-  color: white;
-}
-h2 {
-  font-size: 1.2em;
-  height: 40px;
-  background-color: #ccc;
-  padding: 5px;
-}
-h3 {
-  font-size: 1em;
-}
-div {
-  border-top: 1px solid #ccc;
-  padding: 0 5px;
-}
-div.genreWrapper {
-  border-bottom: 2px solid #ccc;
-  font-size: 90%;
-  background-color: #eee;
-}
-div.poster {
-  height: 150px;
-  width: 100px;
-  float: right;
-}
-div.castWrapper {
-  width: 150px;
-  float: left;
-  height: 220px;
-}
-div.plotWrapper {
-  clear: both;
-  height: 150px;
-  font-size: 85%;
-}
-div.specWrapper {
-  clear: both;
-  height: 100px;
-  font-size: 90%;
-  background-color: #ddd;
-}
-.smaller {
-  font-size: 85%;
-}
+/* (c) Keith Funkhouser, 2011 */
+
+/* Layout */
+	body
+	{
+	color: #000000;
+	background-color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 14px;
+	line-height: 1.6;
+	margin: 10px;
+	}
+	
+	#container
+	{
+	width: 790px;
+	margin: 0 auto;
+	border: 2px solid #000000;
+	}
+	
+	#header
+	{
+	padding: 10px 20px 10px 0;  
+	text-align: right;
+	overflow: auto;
+	background-image: url('images/logo.gif');
+  height: 165px;
+  border-bottom: 2px solid black;
+	}
+	
+	#movie1, #movie2, #movie3
+	{
+	width: 200px;
+	padding: 10px;
+	margin: 20px 0 20px 30px;
+	border: 2px solid transparent;
+	float: left;
+	}
+	
+
+	#footer, #navbar
+	{
+	color: #000000;
+	font-weight: bold;
+	clear: both;
+	overflow: auto;
+	text-align: center;
+	font-size: 12px;
+	margin: auto 0;
+	}
+	
+  #footer
+  {
+  border-top: 2px solid black;
+  }
+  
+  #navbar
+  {
+  border-bottom: 2px solid #000000;
+  }
+
+/* Text styling */
+	h1
+	{
+	text-transform: uppercase;
+	color: #000000;
+	text-align: center;
+	margin: 0 0 10px 0;
+	}
+	
+	h2
+	{
+	font-size: 16px;
+	text-transform: lowercase;
+	color: #000000;
+	margin: 0 auto;
+	text-align: center;
+	}
+	
+	pre
+	{
+	font-family: monospace;
+	}
+
+/* Image styling */
+	img.movie
+	{
+	display: block;
+  margin-left: auto;
+  margin-right: auto; 
+	}
+
+/* Navigation bars styling */
+	#footer ul li, #navbar ul li
+	{
+	display: inline;
+	list-style-type: none;
+	padding-right: 30px;
+	vertical-align: middle;
+	line-height: 2.5em;
+	}
+	
+	#footer a:link, #footer a:visited, #navbar a:link, #navbar a:visited
+	{
+	color: #000000;
+	text-decoration: none;
+	border-width: 0 0 0.1em;
+	border-color: #000000;
+	border-style: dotted;
+	font-weight: bold;
+	}
+	
+	#footer a:hover, #footer a:active, #navbar a:hover, #navbar a:active
+	{
+	background: #000000;
+	color: #FFFFFF;
+	font-weight: bold;
+	}
+
+/*Link styling */
+	a:link, a:visited
+	{
+	color: #005000;
+	text-decoration: none;
+	border-width: 0 0 0.1em;
+	border-color: #005000;
+	border-style: dotted;
+	font-weight: bold;
+	}
+	
+	a:hover, a:active
+	{
+	background: #005000;
+	color: #FFFFFF;
+  }
