@@ -20,7 +20,6 @@
 	
 	#header
 	{
-	padding: 10px 20px 10px 0;  
 	text-align: right;
 	overflow: auto;
 	background-image: url('images/logo.gif');
@@ -97,7 +96,7 @@
 	list-style-type: none;
 	padding-right: 30px;
 	vertical-align: middle;
-	line-height: 2.5em;
+	line-height: 1em;
 	}
 	
 	#footer a:link, #footer a:visited, #navbar a:link, #navbar a:visited

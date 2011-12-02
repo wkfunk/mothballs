@@ -1,5 +1,4 @@
 		<ul>
-			<li><a href="index.shtml">[ links ]</a></li>
-			<li><a href="committee.shtml">[ on links ]</a></li>
-			<li><a href="projects.shtml">[ on links ]</a></li>
+			<li><a href="index.php">[ home ]</a></li>
+			<li><a href="my_ratings.php">[ my ratings ]</a></li>
 		</ul>
