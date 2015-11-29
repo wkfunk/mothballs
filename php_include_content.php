@@ -1,5 +1,5 @@
     <?php
-    $db_conn = new mysqli('localhost', 'root', 'root', 'movieCol');
+      $db_conn = new mysqli('localhost', 'root', 'root', 'movieCol');
 
     //if($_GET) {
       //$col = $_GET['c'];
@@ -9,7 +9,8 @@
       //$q = "SELECT * FROM movie_collection order by title";
     //}
 
-   $q = "SELECT * FROM movie_collection WHERE movie_collection.imdb NOT IN (SELECT imdbid FROM user_ratings) order by title";
+   #$q = "SELECT * FROM movie_collection WHERE movie_collection.imdb NOT IN (SELECT imdbid FROM user_ratings) order by title";
+   $q = "SELECT * FROM movie_collection WHERE movie_collection.imdb NOT IN (SELECT imdbid FROM user_ratings) order by RAND() limit 3";
     $r = $db_conn->query($q);
     $uniqTitles = array();
     $numMovies = mysqli_num_rows($r);

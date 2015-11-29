@@ -28,10 +28,10 @@
     $resultDown = mysql_query($downMovs) or die(mysql_error());
     $resultUnseen = mysql_query($unseenMovs) or die(mysql_error());
     
-    //upvoted shit
+    //upvoted stuff
     if(mysql_num_rows($resultUp)) { 
       $counter = 0;
-      echo '<br /><h1>shit i like</h1><table align="center" border="1" style="background-color:green">';
+      echo '<br /><h1>stuff i like</h1><table align="center" border="1" style="background-color:green">';
       while($row = mysql_fetch_array($resultUp)) {
         if($counter%3 == 0) {
           echo '<tr>';
@@ -45,10 +45,10 @@
       echo '</table><br />';
     }
 
-    //downvoted shit
+    //downvoted stuff
     if(mysql_num_rows($resultDown)) { 
       $counter = 0;
-      echo '<br /><h1>shit i <em>don\'t</em> like</h1><table align="center" border="1" style="background-color:red">';
+      echo '<br /><h1>stuff i <em>don\'t</em> like</h1><table align="center" border="1" style="background-color:red">';
       while($row = mysql_fetch_array($resultDown)) {
         if($counter%3 == 0) {
           echo '<tr>';
@@ -62,10 +62,10 @@
       echo '</table><br />';
     }
     
-    //unvoted shit
+    //unvoted stuff
     if(mysql_num_rows($resultUnseen)) { 
       $counter = 0;
-      echo '<br /><h1>shit i haven\'t seen</h1><ul>';
+      echo '<br /><h1>stuff i haven\'t seen</h1><ul>';
       while($row = mysql_fetch_array($resultUnseen)) {
         echo '<li><strong>'.$row['title'].' </strong>(wait! i\'ve seen this! <a href="upvote">it\'s good :]</a> <a href="downvote">not for me :/</a></li>';
         if($counter==(mysql_num_rows($resultUnseen)-1)) {
